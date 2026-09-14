@@ -635,74 +635,42 @@ h1, h2, h3, h4, h5, h6 {
     100% { box-shadow: 0 0 0 0 rgba(255, 75, 75, 0); }
 }
 
-.more-pubs {
-    padding: 2rem;
-}
-
-.more-pubs h3 {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.clean-list {
-    list-style: none;
-}
-
-.clean-list li {
-    margin-bottom: 1rem;
-    border-bottom: 1px solid var(--glass-border);
-    padding-bottom: 1rem;
-}
-
-.clean-list li:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.clean-list a {
-    color: var(--text-muted);
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: color 0.3s;
-    font-size: 1.05rem;
-}
-
-.clean-list a:hover {
-    color: var(--primary);
-}
-
-/* Skills */
+/* Skills - UPDATED FOR WOW BLUE ICONS */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
 }
 
 .skill-category {
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.skill-category:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 210, 255, 0.4);
 }
 
 .skill-icon {
-    font-size: 3rem;
-    color: var(--primary);
+    font-size: 3.5rem;
     margin-bottom: 1.5rem;
     background: -webkit-linear-gradient(135deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 12px rgba(0, 210, 255, 0.4));
 }
 
 .skill-category h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
+    font-family: var(--font-heading);
 }
 
 .skill-category p {
     color: var(--text-muted);
     font-size: 0.95rem;
+    line-height: 1.7;
 }
 
 .education-grid {
