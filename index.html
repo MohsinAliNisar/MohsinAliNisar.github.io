@@ -24,7 +24,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li> <!-- NEW -->
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger"><i class="fas fa-bars"></i></div>
@@ -37,7 +37,7 @@
                 <h2 class="greeting">Hello, I'm</h2>
                 <h1 class="name">Mohsin Ali Nisar</h1>
                 <h3 class="title">Senior Software Engineer & Solutions Architect</h3>
-                <p class="subtitle">15+ years engineering mission-critical enterprise systems. <span class="highlight">Micro1 Vetted Senior Software Engineer.</span> Expert in AI, GIS, Microservices, and Enterprise Architecture.</p> <!-- UPDATED -->
+                <p class="subtitle">15+ years engineering mission-critical enterprise systems. <span class="highlight">Micro1 Vetted Senior Software Engineer.</span> Expert in AI, GIS, Microservices, and Enterprise Architecture.</p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn primary-btn">View My Work</a>
                     <a href="CV_Mohsin_Ali_Nisar.pdf" class="btn secondary-btn" download>Download CV</a>
@@ -65,13 +65,13 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>Senior Software Engineer and Solutions Architect with over 15 years of experience engineering mission-critical enterprise systems across Supply Chain Logistics, AI Video Surveillance, Medical Billings, USAID Monitoring, and Fleet Management real-time tracking platforms.</p>
-                    <p><span class="highlight">Micro1 Vetted Senior Software Engineer.</span> Established as a technical anchor and engineering lead who solves high-impact production anomalies that stop other teams, while actively mentoring cross-functional groups to drive deep technical execution. Proven track record of owning problems end-to-end: Data → API → UI → Deployment.</p> <!-- UPDATED -->
+                    <p><span class="highlight">Micro1 Vetted Senior Software Engineer.</span> Established as a technical anchor and engineering lead who solves high-impact production anomalies that stop other teams, while actively mentoring cross-functional groups to drive deep technical execution. Proven track record of owning problems end-to-end: Data → API → UI → Deployment.</p>
                     <p>I specialize in Full-Stack Development, Microservices, GIS, AI/ML Integration, SharePoint Enterprise, and Real-time Systems. Trusted to stabilize legacy platforms, modernize to cloud, and deliver national-scale solutions for USAID, UN, and Fortune 500 clients.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-box"><h3 class="stat-number">15+</h3><p class="stat-label">Years Experience</p></div>
                     <div class="stat-box"><h3 class="stat-number">50+</h3><p class="stat-label">Systems Delivered</p></div>
-                    <div class="stat-box"><h3 class="stat-number">Micro1</h3><p class="stat-label">Vetted Engineer</p></div> <!-- UPDATED -->
+                    <div class="stat-box"><h3 class="stat-number">Micro1</h3><p class="stat-label">Vetted Engineer</p></div>
                 </div>
             </div>
         </div>
@@ -127,8 +127,121 @@
             <h2 class="section-title">Professional Experience <span class="highlight">.</span></h2>
             <div class="timeline">
 
-                <!-- Yahan tumhara pura experience wala code same rahega -->
-                <!-- ... tumhara existing timeline code ... -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">Jul 2024 – Present</span>
+                        <h3 class="timeline-role">Senior Software Engineer</h3>
+                        <h4 class="timeline-company">SMASH / BlueEye | Remote, USA</h4>
+                        <p class="mb-3"><strong>Problem:</strong> Legacy video surveillance platform was a monolith with high latency and limited AI capabilities. Needed modern, scalable architecture for real-time analytics and sub-second livestreaming.</p>
+                        <ul>
+                            <li><strong>Solution - Microservices Migration:</strong> Architected migration to .NET 8 microservices on Azure with bounded contexts: video ingestion, AI analytics, notifications.</li>
+                            <li><strong>Solution - Real-time Streaming:</strong> Directed architecture of WebRTC/HLS/WHEP livestreaming engine using Azure Service Bus and Event Grid for <1s latency.</li>
+                            <li><strong>Solution - AI Anomaly Detection:</strong> Engineered AI anomaly detection parsing VAPIX events via gRPC with Chain-of-Thought reasoning and LLM integration.</li>
+                        </ul>
+                        <p class="mt-4"><strong>Impact:</strong> Delivered a scalable cloud-native platform enabling real-time threat detection. Reduced latency and improved system reliability for distributed security operations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">Mar 2021 – Jul 2024</span>
+                        <h3 class="timeline-role">Senior Software Engineer</h3>
+                        <h4 class="timeline-company">GlobalTranz | Remote, USA</h4>
+                        <p class="mb-3"><strong>Problem:</strong> Multi-million dollar 3PL platform suffered from undocumented code, security vulnerabilities, slow payment cycles, and poor observability. Needed stabilization and modernization.</p>
+                        <ul>
+                            <li><strong>Solution - Legacy Recovery:</strong> Took ownership of undocumented 3PL suite. Reverse engineered architecture, stabilized Accounting/Auditing modules, and neutralized SQL injection vulnerabilities.</li>
+                            <li><strong>Solution - Fin-Tech Quick Pay:</strong> Engineered serverless event-driven ledger via Azure Service Bus for dynamic surcharges and automated ACH settlements.</li>
+                            <li><strong>Solution - Audit & Microservices:</strong> Built domain-oriented .NET Core microservices with Clean Architecture deployed on Docker/AKS. Automated discrepancy routing using Dead-Letter Queues.</li>
+                            <li><strong>Solution - Data & Observability:</strong> Fixed critical production bugs by analyzing log state machines. Diagnosed Elasticsearch failures and refactored stored procedures. Implemented Correlation IDs for distributed tracing.</li>
+                        </ul>
+                        <p class="mt-4"><strong>Impact:</strong> Cut payment processing from 7 days to 24 hours. Improved system stability for 5000+ daily transactions. Reduced technical debt and enabled data-driven freight operations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">Jul 2014 – Nov 2019</span>
+                        <h3 class="timeline-role">Full Stack Software Engineer | System Architect</h3>
+                        <h4 class="timeline-company">MSI / Experience International | Islamabad, Pakistan <span style="font-weight:400;">- USAID & USDA Projects</span></h4>
+                        <p class="mb-3"><strong>Problem:</strong> USAID and USDA required enterprise platforms for planning, monitoring, and evaluation of international development programs. Needed centralized data systems, GIS capabilities, and automated reporting for mission decision-making.</p>
+                        <ul>
+                            <li><strong>Solution - National M&E Platforms:</strong> Architected and delivered 5 national-scale systems for program tracking, security, and indicator reporting. Owned full lifecycle from requirements to deployment for USAID mission teams and Implementing Partners.</li>
+                            <li><strong>Solution - GIS Web Applications:</strong> Designed and built enterprise GIS web applications to visualize, analyze, and manage program data spatially. Enabled stakeholders to explore project coverage, performance, and risk by geography.</li>
+                            <li><strong>Solution - Geo-Databases & Data Pipelines:</strong> Engineered comprehensive geo-databases and automated ETL pipelines. Standardized data ingestion from field teams to ensure accuracy and timeliness for reporting.</li>
+                            <li><strong>Solution - Executive Dashboards & Analytics:</strong> Built real-time Command & Control dashboards and analytics. Transformed raw operational data into trends, KPIs, and insights for program management.</li>
+                            <li><strong>Solution - Compliance & Reporting Automation:</strong> Developed systems for IPs to submit disaggregated indicator data. Automated workflows to improve data quality, audit trails, and donor reporting compliance.</li>
+                        </ul>
+                        <p class="mt-4"><strong>Impact:</strong> Enabled data-driven management of multi-million dollar USAID and USDA programs across Pakistan. Improved reporting speed and accuracy for 100+ projects. Provided mission leadership with real-time GIS and M&E insights, increasing transparency and accountability for development outcomes.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">Aug 2020 – Jan 2021</span>
+                        <h3 class="timeline-role">Senior Software Engineer</h3>
+                        <h4 class="timeline-company">CUBE Health Care System | Islamabad, Pakistan / Hybrid - USA Client</h4>
+                        <p class="mb-3"><strong>Problem:</strong> US-based healthcare client needed scalable platforms to manage medical billing, revenue cycle, and provider workflows while maintaining HIPAA compliance and auditability across multiple applications.</p>
+                        <ul>
+                            <li><strong>Solution - Multi-Product Delivery:</strong> Engineered backend APIs and modernized front-end modules for billing, provider, and application portals. Supported multiple concurrent healthcare products.</li>
+                            <li><strong>Revenue & Billing Optimization:</strong> Contributed to Merit Based Payment System to ensure accurate provider payouts. Streamlined Cube Billing Client to improve invoice processing and client interactions.</li>
+                            <li><strong>RCM & HIPAA Compliance:</strong> Enhanced Revenue Cycle Management workflows to improve claim processing and revenue capture. Implemented comprehensive audit logs to ensure HIPAA compliance and data security.</li>
+                            <li><strong>Communication & Portals:</strong> Built user-friendly Provider and Application Portals for easier access to services. Developed notification system for user inquiries to reduce response times.</li>
+                            <li><strong>Team Leadership:</strong> Acted as senior technical resource mentoring junior developers. Coordinated with QE, Product, and Deployment teams across sprints to ensure on-time delivery.</li>
+                        </ul>
+                        <p class="mt-4"><strong>Impact:</strong> Delivered 6+ critical healthcare modules supporting US medical billing operations. Improved billing accuracy, ensured HIPAA compliance through audit trails and secure logging, and reduced communication delays with automated notifications and modernized portals.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">May 2013 – Jul 2014</span>
+                        <h3 class="timeline-role">Sr. Software Engineer</h3>
+                        <h4 class="timeline-company">BRIGHTSPYRE.COM | Islamabad, Pakistan</h4>
+                        <p class="mb-3"><strong>Problem:</strong> Government and enterprise clients operated on manual, fragmented processes for field reporting, corporate management, and payroll. Needed centralized, data-driven platforms to improve accountability and operational efficiency.</p>
+                        <ul>
+                            <li><strong>Solution - PRMS - Field Operations & Reporting System:</strong> Architected and delivered a mission-critical MIS for PDMA PaRRSA Peshawar. Enabled field officers to collect, validate, and report project progress in real-time. Managed full lifecycle: architecture, development, testing, deployment, and government staff training.</li>
+                            <li><strong>Solution - TolLink Corporate Management Portal:</strong> Engineered and launched an enterprise business portal for a Toll Road management company. Focused on workflow automation, usability, and content management to strengthen operations and stakeholder communication.</li>
+                            <li><strong>Solution - E-Workers - Payroll & HR Automation System:</strong> Designed and built a custom payroll automation platform for distributed teams. Automated complex salary rules and reporting to replace manual spreadsheets and reduce errors.</li>
+                        </ul>
+                        <p class="mt-4"><strong>Impact:</strong> Delivered 3 enterprise-grade platforms. PRMS increased transparency and accountability for government disaster recovery projects. Corporate portal improved operational efficiency. Payroll system cut processing time and errors through automation of multi-rule calculations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">Nov 2012 – Dec 2013</span>
+                        <h3 class="timeline-role">Full Stack Software Engineer | Architect</h3>
+                        <h4 class="timeline-company">Xpert Technologies | Abbottabad, Pakistan</h4>
+                        <p class="mb-3"><strong>Problem:</strong> Legacy desktop-based telematics system limited accessibility and required on-prem installation for managing 15,000+ fleet assets.</p>
+                        <ul>
+                            <li><strong>Solution - TeleBudgie IV Web Migration:</strong> Architected transformation from desktop to web using Onion Architecture. Enabled remote access and seamless UX for fleet managers.</li>
+                            <li><strong>Live Tracking & Geo-Fencing:</strong> Built real-time vehicle tracking with location, direction, speed on maps. Implemented Circle, Polygon, and Square geo-fences with speed limits and instant entry/exit alerts.</li>
+                            <li><strong>Automated Reporting & Analytics:</strong> Engineered scheduled email reports and graphical dashboards for hours worked, distance, trips, and driver scorecards. Configured alerts for ignition, geo-fence, and battery events.</li>
+                        </ul>
+                        <p class="mt-4"><strong>Impact:</strong> Successfully migrated 15,000+ assets to a scalable web platform. Cut operational dependency on desktop installs, enabled 24/7 remote monitoring, and improved decision-making with automated insights.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">Jun 2011 – Sep 2012</span>
+                        <h3 class="timeline-role">Senior ASP.Net Software Engineer | Technical Lead</h3>
+                        <h4 class="timeline-company">ADVANCE I-TECH SOLUTIONS | Islamabad, Pakistan</h4>
+                        <p class="mb-3"><strong>Problem:</strong> Import-Export and Indenting firms relied on disconnected spreadsheets and manual processes for HR, Payroll, and Operations management.</p>
+                        <ul>
+                            <li><strong>Solution - TIMS ERP - Trading & Indenting Management System:</strong> Led end-to-end development and implementation of an ERP platform for SMB market. Architected and integrated core modules for HRM, Payroll, and Administrative Security.</li>
+                            <li><strong>Full Lifecycle Ownership:</strong> Managed project from requirements analysis to deployment. Provided technical guidance to team and ensured seamless integration across all business modules.</li>
+                        </ul>
+                        <p class="mt-4"><strong>Impact:</strong> Delivered TIMS ERP to automate business operations for small to mid-market firms. Reduced manual effort and errors by centralizing HR and payroll workflows into a single, integrated platform.</p>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -137,10 +250,10 @@
 <section id="projects" class="section bg-alt">
     <div class="container">
         <h2 class="section-title">Flagship Projects <span class="highlight">.</span></h2>
-        <div class="skills-container"> <!-- CHANGED: projects-grid -> skills-container -->
+        <div class="skills-container">
 
-            <div class="skill-category glass-panel"> <!-- CHANGED: project-card -> skill-category -->
-                <div class="skill-icon"><i class="fas fa-video"></i></div> <!-- CHANGED -->
+            <div class="skill-category glass-panel">
+                <div class="skill-icon"><i class="fas fa-video"></i></div>
                 <h3>AI Video Surveillance Platform</h3>
                 <p><strong>Problem:</strong> Security teams needed real-time threat detection with minimal latency across distributed sites.</p>
                 <p><strong>Solution:</strong> Architected an edge-to-cloud AI platform for live video analytics and anomaly detection. Deployed for real-time monitoring with sub-second response.</p>
@@ -191,7 +304,7 @@
     </div>
 </section>
 
-<section id="certifications" class="section"> <!-- NEW SECTION -->
+<section id="certifications" class="section">
     <div class="container">
         <h2 class="section-title">Certifications <span class="highlight">.</span></h2>
         <div class="skills-container"> 
@@ -202,7 +315,7 @@
                 <p><strong>Issuer:</strong> micro1.ai</p>
                 <p><strong>Date:</strong> May 5th, 2025</p>
                 <p><strong>Verified By:</strong> Passed micro1's AI Interview & Technical Assessment for Senior Software Engineer role</p>
-                <a  href="micro1-vetted.jpg" target="_blank" class="btn secondary-btn" style="margin-top:1rem; padding:0.8rem 1.8rem; font-size:0.95rem;">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                <a href="micro1-vetted.jpg" target="_blank" class="btn secondary-btn" style="margin-top:1rem; padding:0.8rem 1.8rem; font-size:0.95rem;">View Certificate <i class="fas fa-external-link-alt"></i></a>
             </div>
 
         </div>
