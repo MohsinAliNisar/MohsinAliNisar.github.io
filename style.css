@@ -806,14 +806,6 @@ footer {
         display: block;
     }
     
-    .name {
-        font-size: 3rem;
-    }
-    
-    .title {
-        font-size: 1.5rem;
-    }
-    
     .about-stats {
         grid-template-columns: 1fr;
     }
@@ -823,69 +815,94 @@ footer {
     }
 }
 
-/* ===== MOBILE RESPONSIVE FIXES FOR MOHSIN ALI NISAR ===== */
-/* ===== MOBILE RESPONSIVE FIXES ===== */
-@media (max-width: 768px) {
-    /* Heading center fix */
-    .section-title {
-        text-align: center !important;
-        left: 0 !important;
-        transform: none !important;
-        width: 100%;
-        display: block;
-        font-size: 2.2rem !important;
-    }
 
+/* ===== FULLY DYNAMIC RESPONSIVE FIX FOR ALL SIZES ===== */
+
+/* 1. NAME + LOGO KO DYNAMIC KARO - HAR SIZE PE AUTO ADJUST */
+.name {
+    font-size: clamp(2rem, 10vw, 4.5rem) !important;
+    line-height: 1.1 !important;
+    word-wrap: break-word !important;
+}
+
+.logo {
+    font-size: clamp(1.4rem, 6vw, 2rem) !important;
+}
+
+.title {
+    font-size: clamp(1.2rem, 5vw, 2rem) !important;
+}
+
+.subtitle {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem) !important;
+}
+
+/* 2. SECTION HEADING CENTER */
+.section-title {
+    font-size: clamp(1.8rem, 6vw, 3rem) !important;
+    text-align: center !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+/* 3. PHOTO DYNAMIC - SIR NA KATE */
+.hero-image {
+    width: clamp(150px, 45vw, 380px) !important;
+    height: clamp(150px, 45vw, 380px) !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+    animation: float 3s ease-in-out infinite !important;
+}
+
+.hero-image-glow {
+    width: clamp(150px, 45vw, 380px) !important;
+    height: clamp(150px, 45vw, 380px) !important;
+}
+
+/* 4. HERO SECTION MOBILE FIX */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 100px !important;
+    }
+    .hero-container {
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+        gap: 2rem !important;
+    }
+    .hero-image-wrapper {
+        justify-content: center !important;
+        margin-top: 1rem;
+    }
     .about-text {
         text-align: center !important;
     }
-
-    /* BG ANIMATION FIX */
     .bg-animation, #stars, #stars2, #stars3 {
         display: block !important;
         z-index: -1 !important;
     }
+}
 
-    /* PHOTO FIX - SIR NA KATE */
-    .hero-image-wrapper {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-    
+/* 5. BOHAT CHOTE MOBILE 320px - 360px */
+@media (max-width: 360px) {
     .hero-image {
-        width: 200px !important;
-        height: 200px !important;
-        border-radius: 50% !important;
-        object-fit: cover !important;
-        object-position: center 25% !important; /* 15% uper shift - is se sir pura aayega */
-        animation: float 3s ease-in-out infinite !important; /* Halki animation wapis */
+        width: 160px !important;
+        height: 160px !important;
+        object-position: center 15% !important;
     }
-    
     .hero-image-glow {
-        width: 200px !important;
-        height: 200px !important;
+        width: 160px !important;
+        height: 160px !important;
+    }
+    .name {
+        font-size: clamp(1.8rem, 9vw, 2.5rem) !important;
     }
 }
 
 /* Halki floating animation */
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-}
-
-@media (max-width: 480px) {
-    .section-title {
-        font-size: 2rem !important;
-    }
-    
-    .hero-image {
-        width: 200px !important;
-        height: 200px !important;
-        object-position: center 10% !important; /* Chote mobile pe aur uper */
-    }
-    
-    .hero-image-glow {
-        width: 200px !important;
-        height: 200px !important;
-    }
+    50% { transform: translateY(-8px); }
 }
